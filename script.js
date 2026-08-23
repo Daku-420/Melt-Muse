@@ -13,47 +13,103 @@
   const PRODUCTS = [
     {
       id: 'midnight-muse',
-      name: 'Product 1 • Midnight Muse',
-      subtitle: 'Dark • Warm • Sensual',
+      name: 'Midnight Muse • Matte Noir',
+      subtitle: 'Smoked Black Tea • Velvet Rose • Amber',
+      category: 'candles',
       price: 1850,
       originalPrice: 2150,
-      category: 'candles',
+      vesselColor: '#1A1715',
       scentFamily: 'Woody Oriental',
+      burnTime: '55–60 Hours',
       image: 'https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=85',
-      description: 'Our crowning signature. Midnight Muse opens with an intriguing whisper of smoked black tea and dark plum before settling into velvet black rose and smoldering cedarwood.'
+      description: 'Our signature dark luxury candle. Opens with smoked black tea leaves and dark plum, melting into a heart of velvet black rose and smoldering cedar.'
     },
     {
       id: 'santal-whisper',
-      name: 'Product 2 • Santal Whisper',
-      subtitle: 'Creamy • Earthy • Grounding',
+      name: 'Santal Whisper • Sage Mist',
+      subtitle: 'Australian Sandalwood • Iris • Papyrus',
+      category: 'candles',
       price: 1950,
       originalPrice: null,
-      category: 'diffusers',
+      vesselColor: '#9CA797',
       scentFamily: 'Woody Aromatics',
-      image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=85',
-      description: 'An intoxicating harmony of Australian sandalwood, cardamom, and soft iris wrapped in milky fig and papyrus.'
+      burnTime: '55–60 Hours',
+      image: 'https://images.unsplash.com/photo-1608181831557-ca5bc41707eb?auto=format&fit=crop&w=800&q=85',
+      description: 'An intoxicating harmony of Australian sandalwood, cardamom, and soft iris wrapped in milky fig and papyrus for effortless quiet luxury.'
     },
     {
-      id: 'fig-cashmere',
-      name: 'Product 3 • Fig & Cashmere',
-      subtitle: 'Lush • Velvet • Comforting',
+      id: 'rose-blush',
+      name: 'Rose & Cashmere • Blush Quartz',
+      subtitle: 'Damask Rose • Pink Pepper • Tonka',
+      category: 'candles',
       price: 1750,
       originalPrice: 1990,
-      category: 'soaps',
-      scentFamily: 'Fruity Green',
-      image: 'https://images.unsplash.com/photo-1570823635306-250abb06d4b3?auto=format&fit=crop&w=800&q=85',
-      description: 'Ripened wild Adriatic figs meet rich coconut nectar, sun-warmed green leaves, and a soft base of cashmere wood.'
+      vesselColor: '#D8B7AF',
+      scentFamily: 'Floral Amber',
+      burnTime: '50–55 Hours',
+      image: 'https://images.unsplash.com/photo-1595867818088-57d88c2a829e?auto=format&fit=crop&w=800&q=85',
+      description: 'Sun-warmed Turkish rose water, pink peppercorns, and delicate cashmere woods poured into a hand-glazed soft rose quartz vessel.'
     },
     {
       id: 'vanilla-ember',
-      name: 'Product 4 • Vanilla Ember',
-      subtitle: 'Smoky • Gourmand • Addictive',
+      name: 'Vanilla Ember • Forest Pine',
+      subtitle: 'Bourbon Vanilla • Charred Oak • Tobacco',
+      category: 'candles',
       price: 1850,
       originalPrice: null,
-      category: 'candles',
+      vesselColor: '#39483F',
       scentFamily: 'Warm Gourmand',
+      burnTime: '55–60 Hours',
       image: 'https://images.unsplash.com/photo-1543257580-7269da773bf5?auto=format&fit=crop&w=800&q=85',
       description: 'Dark Bourbon vanilla orchid with charred oak, caramelized amber, and tobacco leaf for sophisticated smoldering sweetness.'
+    },
+
+    // Reed Diffusers
+    {
+      id: 'santal-diffuser',
+      name: 'Santal Whisper Reed Diffuser',
+      subtitle: 'Natural Rattan Reeds • 200ml Glass Decanter',
+      category: 'diffusers',
+      price: 2250,
+      originalPrice: 2500,
+      scentFamily: 'Woody Aromatics',
+      image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=85',
+      description: 'Continuous room-filling fragrance without flame. Infused with pure essential oils of sandalwood, iris, and crisp cedar.'
+    },
+    {
+      id: 'citrus-diffuser',
+      name: 'Citrus Solstice Reed Diffuser',
+      subtitle: 'Sicilian Orange • Yuzu • Bergamot',
+      category: 'diffusers',
+      price: 2150,
+      originalPrice: null,
+      scentFamily: 'Citrus Herbaceous',
+      image: 'https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?auto=format&fit=crop&w=800&q=85',
+      description: 'Sun-drenched Sicilian blood orange and Japanese yuzu blended with crushed rosemary for an invigorating daily uplift.'
+    },
+
+    // Soap & Wax Melts
+    {
+      id: 'botanical-soap',
+      name: 'French Clay & Lavender Soap Bar',
+      subtitle: 'Cold-Processed Shea Butter & French Green Clay',
+      category: 'soaps',
+      price: 650,
+      originalPrice: 750,
+      scentFamily: 'Herbal Botanical',
+      image: 'https://images.unsplash.com/photo-1570823635306-250abb06d4b3?auto=format&fit=crop&w=800&q=85',
+      description: 'Artisanal cold-pressed nourishing soap bar enriched with cold-pressed olive oil, French clay, and calming lavender.'
+    },
+    {
+      id: 'amber-wax-melts',
+      name: 'Artisan Botanical Wax Melts (6-Pack)',
+      subtitle: 'Pure Coconut Wax Infusions',
+      category: 'soaps',
+      price: 850,
+      originalPrice: null,
+      scentFamily: 'Warm Amber Resin',
+      image: 'https://images.unsplash.com/photo-1602874801007-bd458bb1b8b8?auto=format&fit=crop&w=800&q=85',
+      description: 'Hand-cast botanical soy wax melts infused with amber resin and dried floral botanicals for flameless warmers.'
     }
   ];
 
@@ -63,16 +119,21 @@
 
   const STATE = {
     cart: [{ id: 'midnight-muse', quantity: 1 }],
+    activeTab: 'candles',
+    bundleSelection: ['midnight-muse', 'santal-whisper', 'vanilla-ember'],
     isSoundPlaying: false,
     audioCtx: null
   };
+
+  const FREE_SHIPPING_THRESHOLD = 1499;
 
   /* ==========================================================================
      DOM REFS
      ========================================================================== */
 
   const DOM = {
-    mainProductGrid: document.getElementById('main-product-grid'),
+    curatedProductGrid: document.getElementById('curated-product-grid'),
+    collectionTabs: document.getElementById('collection-tabs'),
     cartBtn: document.getElementById('cart-btn'),
     cartCount: document.getElementById('cart-count'),
     cartHeaderCount: document.getElementById('cart-header-count'),
@@ -80,8 +141,14 @@
     closeCartBtn: document.getElementById('close-cart-btn'),
     cartItemsContainer: document.getElementById('cart-items-container'),
     cartSubtotal: document.getElementById('cart-subtotal'),
+    cartShippingVal: document.getElementById('cart-shipping-val'),
     cartTotalVal: document.getElementById('cart-total-val'),
+    shippingProgressText: document.getElementById('shipping-progress-text'),
+    shippingMeterFill: document.getElementById('shipping-meter-fill'),
     proceedCheckoutBtn: document.getElementById('proceed-checkout-btn'),
+
+    bundleGridSelection: document.getElementById('bundle-selection-grid'),
+    addBundleBtn: document.getElementById('add-bundle-btn'),
 
     soundToggleBtn: document.getElementById('sound-toggle-btn'),
     soundIconDisplay: document.getElementById('sound-icon-display'),
@@ -101,18 +168,12 @@
     quickviewDesc: document.getElementById('quickview-desc'),
     quickviewAddBtn: document.getElementById('quickview-add-btn'),
 
-    quizOptionBtns: document.querySelectorAll('.quiz-option-btn'),
-    quizMatchName: document.getElementById('quiz-match-name'),
-    quizMatchDesc: document.getElementById('quiz-match-desc'),
-    quizAddBtn: document.getElementById('quiz-add-btn'),
-
     newsletterForm: document.getElementById('newsletter-form'),
     newsletterEmail: document.getElementById('newsletter-email'),
     toastContainer: document.getElementById('toast-container')
   };
 
   let activeQuickViewId = null;
-  let activeQuizScentId = 'midnight-muse';
 
   /* ==========================================================================
      TOAST NOTIFICATIONS
@@ -121,7 +182,7 @@
   const showToast = (message, duration = 3500) => {
     if (!DOM.toastContainer) return;
     const toast = document.createElement('div');
-    toast.className = 'toast-message';
+    toast.className = 'toast-bubble';
     toast.textContent = message;
     DOM.toastContainer.appendChild(toast);
     setTimeout(() => {
@@ -130,7 +191,7 @@
   };
 
   /* ==========================================================================
-     WEB AUDIO AMBIENT SOUND (Wood-Wick Crackle)
+     WEB AUDIO AMBIENT SOUND (Wood-Wick Acoustic Synthesizer)
      ========================================================================== */
 
   const toggleAmbienceAudio = () => {
@@ -185,37 +246,36 @@
         if (DOM.soundIconDisplay) DOM.soundIconDisplay.textContent = '🔊';
         showToast('🕯️ Wood wick crackle ambience playing');
       } catch (err) {
-        console.warn('Audio not allowed without gesture', err);
+        console.warn('Audio gesture required', err);
       }
     }
   };
 
   /* ==========================================================================
-     PRODUCT RENDERING (Matching Reference Image)
+     PRODUCT RENDERING WITH CATEGORY TABS
      ========================================================================== */
 
-  const renderProductCards = () => {
-    if (!DOM.mainProductGrid) return;
-    DOM.mainProductGrid.innerHTML = PRODUCTS.map(prod => `
-      <article class="minimal-card" data-product-id="${prod.id}">
-        <div class="minimal-thumb-frame">
-          <img src="${prod.image}" alt="${prod.name}" class="minimal-thumb-img" loading="lazy">
-          ${prod.originalPrice ? `<span class="sale-tag-badge">Sale</span>` : ''}
+  const renderProducts = () => {
+    if (!DOM.curatedProductGrid) return;
+    const filtered = PRODUCTS.filter(p => p.category === STATE.activeTab);
+    DOM.curatedProductGrid.innerHTML = filtered.map(prod => `
+      <article class="product-showcase-card" data-product-id="${prod.id}">
+        <div class="product-vessel-frame">
+          <img src="${prod.image}" alt="${prod.name}" class="vessel-img" loading="lazy">
+          ${prod.originalPrice ? `<span class="discount-pill">20% SALE</span>` : ''}
         </div>
-        <div class="minimal-info">
-          <h3 class="minimal-title">${prod.name}</h3>
-          <div class="minimal-scent-notes">${prod.subtitle}</div>
-          <div class="minimal-price-row">
-            ${prod.originalPrice ? `<span class="old-price">₹${prod.originalPrice.toLocaleString('en-IN')}</span>` : ''}
-            <span>₹${prod.price.toLocaleString('en-IN')}</span>
-          </div>
+        <h3 class="card-title">${prod.name}</h3>
+        <div class="card-notes-preview">${prod.subtitle}</div>
+        <div class="card-pricing-line">
+          ${prod.originalPrice ? `<span class="price-strikethrough">₹${prod.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+          <span>₹${prod.price.toLocaleString('en-IN')}</span>
         </div>
       </article>
     `).join('');
   };
 
   /* ==========================================================================
-     CART MANAGEMENT
+     CART OPERATIONS
      ========================================================================== */
 
   const addToCart = (productId, qty = 1) => {
@@ -250,12 +310,30 @@
     if (DOM.cartItemsContainer) {
       if (STATE.cart.length === 0) {
         DOM.cartItemsContainer.innerHTML = `
-          <div style="text-align: center; padding: 3rem 1rem; color: var(--text-secondary);">
-            <p>Your bag is empty.</p>
+          <div style="text-align: center; padding: 4rem 1rem; color: var(--text-secondary);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🕯️</div>
+            <p style="font-family: var(--font-serif); font-size: 1.25rem;">Your bag is currently empty.</p>
           </div>
         `;
       } else {
         DOM.cartItemsContainer.innerHTML = STATE.cart.map(item => {
+          if (item.id === 'muse-trio-bundle') {
+            return `
+              <div style="display: flex; gap: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+                <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=85" style="width: 70px; height: 85px; object-fit: cover;">
+                <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                  <div>
+                    <div style="font-family: var(--font-serif); font-size: 1.1rem;">Custom Muse Trio Keepsake Box</div>
+                    <div style="font-size: 0.72rem; color: #8C827A;">Set of 3 Curated Candles + Matches</div>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 0.8rem;">Qty: ${item.quantity}</span>
+                    <span style="font-weight: 600;">₹${(4790 * item.quantity).toLocaleString('en-IN')}</span>
+                  </div>
+                </div>
+              </div>
+            `;
+          }
           const prod = PRODUCTS.find(p => p.id === item.id);
           if (!prod) return '';
           return `
@@ -263,7 +341,7 @@
               <img src="${prod.image}" alt="${prod.name}" style="width: 70px; height: 85px; object-fit: cover;">
               <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
                 <div>
-                  <div style="font-family: var(--font-serif); font-size: 1.1rem;">${prod.name}</div>
+                  <div style="font-family: var(--font-serif); font-size: 1.05rem;">${prod.name}</div>
                   <div style="font-size: 0.72rem; color: #8C827A;">₹${prod.price.toLocaleString('en-IN')}</div>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -282,12 +360,22 @@
     }
 
     const subtotal = STATE.cart.reduce((sum, item) => {
+      if (item.id === 'muse-trio-bundle') return sum + 4790 * item.quantity;
       const prod = PRODUCTS.find(p => p.id === item.id);
       return sum + (prod ? prod.price * item.quantity : 0);
     }, 0);
 
+    const isFree = subtotal >= FREE_SHIPPING_THRESHOLD;
+    const progress = Math.min(100, (subtotal / FREE_SHIPPING_THRESHOLD) * 100);
+
     if (DOM.cartSubtotal) DOM.cartSubtotal.textContent = `₹${subtotal.toLocaleString('en-IN')}`;
-    if (DOM.cartTotalVal) DOM.cartTotalVal.textContent = `₹${subtotal.toLocaleString('en-IN')}`;
+    if (DOM.cartShippingVal) DOM.cartShippingVal.textContent = isFree ? 'COMPLIMENTARY' : '₹149';
+    if (DOM.cartTotalVal) DOM.cartTotalVal.textContent = `₹${(subtotal + (isFree || subtotal === 0 ? 0 : 149)).toLocaleString('en-IN')}`;
+
+    if (DOM.shippingMeterFill) DOM.shippingMeterFill.style.width = `${progress}%`;
+    if (DOM.shippingProgressText) {
+      DOM.shippingProgressText.textContent = isFree ? 'Complimentary shipping unlocked!' : `Add ₹${(FREE_SHIPPING_THRESHOLD - subtotal).toLocaleString('en-IN')} more for free delivery`;
+    }
   };
 
   const openCart = () => {
@@ -350,12 +438,33 @@
   };
 
   /* ==========================================================================
-     EVENT ATTACHMENTS
+     EVENT BINDINGS
      ========================================================================== */
 
   const attachEvents = () => {
     // Ambience
     if (DOM.soundToggleBtn) DOM.soundToggleBtn.addEventListener('click', toggleAmbienceAudio);
+
+    // Collection Tabs Switcher
+    if (DOM.collectionTabs) {
+      DOM.collectionTabs.addEventListener('click', (e) => {
+        const btn = e.target.closest('.filter-tab-btn');
+        if (btn) {
+          DOM.collectionTabs.querySelectorAll('.filter-tab-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          STATE.activeTab = btn.getAttribute('data-tab');
+          renderProducts();
+        }
+      });
+    }
+
+    // Bundle Builder Add
+    if (DOM.addBundleBtn) {
+      DOM.addBundleBtn.addEventListener('click', () => {
+        addToCart('muse-trio-bundle', 1);
+        showToast('Custom Muse Trio Gift Set added to your bag!');
+      });
+    }
 
     // Cart
     if (DOM.cartBtn) DOM.cartBtn.addEventListener('click', openCart);
@@ -379,9 +488,9 @@
 
     if (DOM.proceedCheckoutBtn) {
       DOM.proceedCheckoutBtn.addEventListener('click', () => {
-        showToast('Directing to secure checkout...');
+        showToast('Directing to secure small-batch checkout...');
         setTimeout(() => {
-          showToast('Order secured! Thank you for melting with us.', 4000);
+          showToast('Order secured! Artisans are queuing your pour.', 4500);
           STATE.cart = [];
           updateCartUI();
           closeCart();
@@ -405,6 +514,15 @@
       });
     }
 
+    // Product Card Clicks
+    document.addEventListener('click', (e) => {
+      const card = e.target.closest('.product-showcase-card');
+      if (card && !e.target.closest('button')) {
+        const pid = card.getAttribute('data-product-id');
+        openQuickView(pid);
+      }
+    });
+
     // Search
     if (DOM.searchBtn) DOM.searchBtn.addEventListener('click', openSearch);
     if (DOM.closeSearchBtn) DOM.closeSearchBtn.addEventListener('click', closeSearch);
@@ -422,14 +540,14 @@
         }
         const matches = PRODUCTS.filter(p => p.name.toLowerCase().includes(q) || p.description.toLowerCase().includes(q));
         if (matches.length === 0) {
-          DOM.searchResultsArea.innerHTML = '<p style="color: var(--text-secondary);">No fragrances found.</p>';
+          DOM.searchResultsArea.innerHTML = '<p style="color: var(--text-secondary);">No fragrances found matching your query.</p>';
         } else {
           DOM.searchResultsArea.innerHTML = matches.map(m => `
-            <div style="display: flex; gap: 1rem; align-items: center; padding: 0.6rem 0; border-bottom: 1px solid var(--border-subtle); cursor: pointer;" data-search-pick="${m.id}">
-              <img src="${m.image}" style="width: 40px; height: 50px; object-fit: cover;">
+            <div style="display: flex; gap: 1rem; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid var(--border-subtle); cursor: pointer;" data-search-select="${m.id}">
+              <img src="${m.image}" style="width: 45px; height: 55px; object-fit: cover;">
               <div>
-                <div style="font-weight: 500;">${m.name}</div>
-                <div style="font-size: 0.75rem; color: #8C827A;">₹${m.price.toLocaleString('en-IN')}</div>
+                <div style="font-weight: 500; font-family: var(--font-serif); font-size: 1.1rem;">${m.name}</div>
+                <div style="font-size: 0.75rem; color: #8C827A;">${m.scentFamily} • ₹${m.price.toLocaleString('en-IN')}</div>
               </div>
             </div>
           `).join('');
@@ -437,43 +555,12 @@
       });
 
       DOM.searchResultsArea.addEventListener('click', (e) => {
-        const pick = e.target.closest('[data-search-pick]');
-        if (pick) {
-          const pid = pick.getAttribute('data-search-pick');
+        const item = e.target.closest('[data-search-select]');
+        if (item) {
+          const pid = item.getAttribute('data-search-select');
           closeSearch();
           openQuickView(pid);
         }
-      });
-    }
-
-    // Card Clicks
-    document.addEventListener('click', (e) => {
-      const card = e.target.closest('.minimal-card');
-      if (card && !e.target.closest('button')) {
-        const pid = card.getAttribute('data-product-id');
-        openQuickView(pid);
-      }
-    });
-
-    // Scent Match Quiz
-    DOM.quizOptionBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        DOM.quizOptionBtns.forEach(b => b.classList.remove('selected'));
-        btn.classList.add('selected');
-        const scentId = btn.getAttribute('data-quiz-scent');
-        activeQuizScentId = scentId;
-        const prod = PRODUCTS.find(p => p.id === scentId);
-        if (prod) {
-          if (DOM.quizMatchName) DOM.quizMatchName.textContent = `${prod.name} (${prod.scentFamily})`;
-          if (DOM.quizMatchDesc) DOM.quizMatchDesc.textContent = prod.description;
-          if (DOM.quizAddBtn) DOM.quizAddBtn.textContent = `+ ADD MATCH TO BAG (₹${prod.price.toLocaleString('en-IN')})`;
-        }
-      });
-    });
-
-    if (DOM.quizAddBtn) {
-      DOM.quizAddBtn.addEventListener('click', () => {
-        addToCart(activeQuizScentId, 1);
       });
     }
 
@@ -481,7 +568,7 @@
     if (DOM.newsletterForm) {
       DOM.newsletterForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        showToast('Welcome to the VIP Muse circle! Privilege code: FIRSTMUSE');
+        showToast('Welcome to the VIP Muse Circle! 10% privilege code: FIRSTMUSE');
         DOM.newsletterForm.reset();
       });
     }
@@ -492,7 +579,7 @@
      ========================================================================== */
 
   const init = () => {
-    renderProductCards();
+    renderProducts();
     updateCartUI();
     attachEvents();
   };

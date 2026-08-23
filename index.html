@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melt Muse | BURNING BRIGHT — Artisanal Candles & Home Fragrance</title>
-    <meta name="description" content="Melt Muse hand-pours luxury botanical candles, reed diffusers, and artisanal home fragrances created to turn everyday moments into something worth remembering.">
+    <meta name="description" content="Artisanal hand-poured botanical candles, bespoke colored ceramic vessels, acoustic crackling wooden wicks, and nuanced fragrances crafted to illuminate everyday rituals.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕯️</text></svg>">
     
     <!-- Google Fonts -->
@@ -19,211 +19,202 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <!-- Top Announcement Bar -->
+    <!-- Top Announcement Ribbon -->
     <div class="top-bar">
-      <span>Free Shipping on Orders over ₹1,499 • Handcrafted Small-Batch Soy Wax</span>
+      <span>Free Shipping on Orders Over ₹1,499 • Hand-Poured Small-Batch Botanical Wax</span>
     </div>
 
-    <!-- Minimal Header -->
+    <!-- Sticky Header -->
     <header class="site-header" id="site-header">
-      <div class="container header-container">
+      <div class="container header-grid">
         <!-- Left Navigation -->
         <nav class="header-nav">
           <a href="#hero" class="header-nav-link">HOME</a>
-          <a href="#shop" class="header-nav-link">SHOP BY</a>
-          <a href="#about" class="header-nav-link">ABOUT</a>
-          <a href="#quiz" class="header-nav-link">SCENT QUIZ</a>
+          <a href="#collection" class="header-nav-link">SHOP BY</a>
+          <a href="#story" class="header-nav-link">OUR STORY</a>
+          <a href="#bundle" class="header-nav-link">CUSTOM BUNDLE</a>
         </nav>
 
-        <!-- Centered Logo -->
-        <div class="header-logo">
-          <a href="#hero" class="header-logo-text">MELT MUSE</a>
-          <div class="header-logo-sub">BURNING BRIGHT</div>
+        <!-- Brand Identity -->
+        <div class="header-logo-wrap">
+          <a href="#hero" class="brand-title">MELT MUSE</a>
+          <div class="brand-subline">BURNING BRIGHT</div>
         </div>
 
-        <!-- Right Action Icons -->
-        <div class="header-actions">
-          <button class="action-icon-btn" id="search-btn" aria-label="Search">
+        <!-- Action Tools -->
+        <div class="header-actions-group">
+          <button class="icon-btn" id="search-btn" aria-label="Search Fragrances">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
           </button>
-          <button class="action-icon-btn" id="sound-toggle-btn" aria-label="Toggle Ambience" title="Wood wick ambience">
+          <button class="icon-btn" id="sound-toggle-btn" aria-label="Toggle Wooden Wick Flame Sound" title="Wooden wick ambience">
             <span id="sound-icon-display">🔈</span>
           </button>
-          <button class="action-icon-btn" id="cart-btn" aria-label="Shopping Bag">
+          <button class="icon-btn" id="cart-btn" aria-label="Shopping Bag">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2Z"></path>
               <path d="M3 6h18"></path>
               <path d="M16 10a4 4 0 0 1-8 0"></path>
             </svg>
-            <span class="action-badge" id="cart-count">1</span>
+            <span class="badge-count" id="cart-count">1</span>
           </button>
         </div>
       </div>
     </header>
 
     <main>
-      <!-- Split Hero Section (Matches Reference Image) -->
-      <section class="split-hero" id="hero">
-        <div class="hero-left-col">
-          <h1 class="hero-editorial-title">B A C K &nbsp; I N &nbsp; S T O C K &nbsp; !</h1>
-          <p class="hero-editorial-sub">Handmade Candle</p>
-          <a href="#shop" class="btn-sand">SHOP NOW</a>
+      <!-- Cinematic Hero Banner (Inspired by Artisan Glow & Natural Elements) -->
+      <section class="hero-cinematic" id="hero">
+        <div class="hero-bg-frame">
+          <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=1600&q=85" alt="Melt Muse handcrafted wooden wick soy candle on natural linen" class="hero-bg-img">
         </div>
-        <div class="hero-right-col">
-          <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=1200&q=85" alt="Melt Muse handcrafted lavender soy candle" class="hero-main-img">
-          <div class="hero-floating-badge">
-            <span>MELT MUSE • PURE BOTANICAL WAX</span>
+        <div class="container">
+          <div class="hero-content-card">
+            <span class="tagline-eyebrow">NEW COLLECTION / 2026</span>
+            <h1 class="hero-headline">IGNITE YOUR SENSES WITH ARTISAN GLOW</h1>
+            <p class="hero-subtext">
+              Indulge in a sensory delight of handcrafted botanical candles poured in sculptural matte ceramic vessels.
+            </p>
+            <a href="#collection" class="btn-sand">EXPLORE COLLECTION</a>
           </div>
         </div>
       </section>
 
-      <!-- Scrolling Marquee Ticker (Matches Reference Image) -->
-      <div class="marquee-banner">
-        <div class="marquee-track">
-          <span class="marquee-item">20% OFF For Candle & Diffuser</span>
-          <span class="marquee-item">•</span>
-          <span class="marquee-item">Free Shipping on Orders Over ₹1,499</span>
-          <span class="marquee-item">•</span>
-          <span class="marquee-item">Handmade Pure Botanical Wax</span>
-          <span class="marquee-item">•</span>
-          <span class="marquee-item">Acoustic Crackling Wooden Wicks</span>
-          <span class="marquee-item">•</span>
-          <span class="marquee-item">20% OFF For Candle & Diffuser</span>
-          <span class="marquee-item">•</span>
-          <span class="marquee-item">Free Shipping on Orders Over ₹1,499</span>
-          <span class="marquee-item">•</span>
-          <span class="marquee-item">Handmade Pure Botanical Wax</span>
+      <!-- Scrolling Marquee Ticker -->
+      <div class="marquee-strip">
+        <div class="marquee-stream">
+          <span class="marquee-token">20% OFF Candle & Diffuser Sets</span>
+          <span class="marquee-token">•</span>
+          <span class="marquee-token">Complimentary Shipping Over ₹1,499</span>
+          <span class="marquee-token">•</span>
+          <span class="marquee-token">100% Biodegradable Coconut-Soy Wax</span>
+          <span class="marquee-token">•</span>
+          <span class="marquee-token">Therapeutic Wooden Wick Acoustics</span>
+          <span class="marquee-token">•</span>
+          <span class="marquee-token">20% OFF Candle & Diffuser Sets</span>
+          <span class="marquee-token">•</span>
+          <span class="marquee-token">Complimentary Shipping Over ₹1,499</span>
+          <span class="marquee-token">•</span>
+          <span class="marquee-token">100% Biodegradable Coconut-Soy Wax</span>
         </div>
       </div>
 
-      <!-- Minimal 4-Column Product Grid (Matches Reference Image) -->
-      <section class="products-section" id="shop">
+      <!-- Tabbed Collection Showcase ("SEE WHAT'S NEW TODAY") -->
+      <section class="collection-showcase-section" id="collection">
         <div class="container">
-          <div class="minimal-products-grid" id="main-product-grid">
+          <div class="section-header-center">
+            <span class="tagline-eyebrow">ELEVATE YOUR SPACE</span>
+            <h2 class="section-heading-lg">SEE WHAT’S NEW TODAY</h2>
+            <div class="filter-tab-bar" id="collection-tabs">
+              <button class="filter-tab-btn active" data-tab="candles">CANDLES</button>
+              <button class="filter-tab-btn" data-tab="diffusers">REED DIFFUSERS</button>
+              <button class="filter-tab-btn" data-tab="soaps">SOAP & WAX MELTS</button>
+            </div>
+          </div>
+
+          <!-- 4-Card Luxury Showcase Grid -->
+          <div class="curated-product-grid" id="curated-product-grid">
             <!-- Dynamically populated via script.js -->
           </div>
         </div>
       </section>
 
-      <!-- Welcome Editorial Section with Asymmetric Photos (Matches Reference Image) -->
-      <section class="welcome-section" id="about">
+      <!-- Alternating Story Block 1: The Candle Pouring Atelier -->
+      <section class="editorial-story-section" id="story">
         <div class="container">
-          <div class="welcome-grid">
-            <div class="welcome-text-col">
-              <h2 class="welcome-heading">WELCOME</h2>
-              <p class="welcome-body">
-                Melt Muse creates thoughtfully made, beautifully scented candles designed to bring warmth, atmosphere, and gentle personality into everyday spaces. Hand-poured with pure botanical wax, sustainably harvested wooden wicks, and nuanced fragrance notes.
+          <div class="story-split-grid">
+            <div class="story-media-box">
+              <img src="https://images.unsplash.com/photo-1543257580-7269da773bf5?auto=format&fit=crop&w=1000&q=85" alt="Lighting a handmade soy candle with wooden match" class="story-media-img">
+            </div>
+            <div class="story-text-pane">
+              <span class="tagline-eyebrow">THE ATELIER PROCESS</span>
+              <h2 class="story-headline">ESSENCE OF ELEGANCE, POURED BY HAND</h2>
+              <p class="story-body-copy">
+                Step into our candle atelier, where each flicker is more than just a flame — it is a carefully crafted piece of living art. From the meticulous curation of pure coconut-soy wax to the infusion of rare botanical essences and therapeutic wooden wicks, our artisans pour passion into every step.
               </p>
-              <a href="#quiz" class="btn-sand">DISCOVER YOUR SCENT →</a>
-            </div>
-            <div class="welcome-media-col">
-              <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=85" alt="Minimalist Reed Diffuser" class="welcome-img-large">
-              <img src="https://images.unsplash.com/photo-1506003094589-53954a26283f?auto=format&fit=crop&w=600&q=85" alt="Sunlit Candle Glow" class="welcome-img-small">
+              <a href="#bundle" class="btn-dark">BUILD YOUR BUNDLE →</a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Flowing Curved / Wavy Ribbon Banner Section (Matches Reference Image) -->
-      <section class="wavy-bestseller-section">
-        <div class="wavy-bg-image-container">
-          <img src="https://images.unsplash.com/photo-1543257580-7269da773bf5?auto=format&fit=crop&w=1600&q=85" alt="Amber jar candle background" class="wavy-bg-img">
-        </div>
-        
-        <!-- SVG Wavy Flowing Ribbon -->
-        <div class="wavy-ribbon-wrapper">
-          <svg class="wavy-ribbon-svg" viewBox="0 0 1200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path id="wavePath" d="M -50 90 Q 250 160, 600 90 T 1250 90" fill="none" stroke="transparent"/>
-            <!-- Wavy Ribbon Shape -->
-            <path d="M 0 85 Q 300 165, 600 85 T 1200 85 L 1200 135 Q 900 55, 600 135 T 0 135 Z" fill="#E6DCCE" fill-opacity="0.95"/>
-            <!-- Text on Path -->
-            <text fill="#1E1C1A" font-family="'Cormorant Garamond', serif" font-size="22" letter-spacing="4">
-              <textPath href="#wavePath" startOffset="5%">
-                • Our best sellers • Gentle scents • Discover our new products • Our best sellers • Gentle scents • Discover our new products •
-              </textPath>
-            </text>
-          </svg>
-        </div>
-
-        <div class="wavy-bestseller-badge">
-          <h2 class="bestseller-floating-title">BEST SELLER</h2>
-        </div>
-      </section>
-
-      <!-- 3-Column Minimal Category Grid (Matches Reference Image) -->
-      <section class="category-spotlight-section" id="categories">
+      <!-- Alternating Story Block 2: Botanical Wellness & Home Rituals -->
+      <section class="editorial-story-section">
         <div class="container">
-          <div class="category-grid-3">
-            <div class="category-card" data-category-filter="candles">
-              <div class="category-img-frame">
-                <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=85" alt="Candles Category" class="category-img">
-              </div>
-              <a href="#shop" class="category-label-link">CANDLES →</a>
-            </div>
-
-            <div class="category-card" data-category-filter="diffusers">
-              <div class="category-img-frame">
-                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=85" alt="Diffusers Category" class="category-img">
-              </div>
-              <a href="#shop" class="category-label-link">DIFFUSER →</a>
-            </div>
-
-            <div class="category-card" data-category-filter="soaps">
-              <div class="category-img-frame">
-                <img src="https://images.unsplash.com/photo-1570823635306-250abb06d4b3?auto=format&fit=crop&w=800&q=85" alt="Soaps and Wax Melts Category" class="category-img">
-              </div>
-              <a href="#shop" class="category-label-link">SOAP & WAX MELTS →</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Interactive Scent Finder Quiz Section (Value Add for Conversion) -->
-      <section class="quiz-section" id="quiz">
-        <div class="container">
-          <div class="quiz-card">
-            <span class="tagline-eyebrow">FRAGRANCE CONCIERGE</span>
-            <h2 class="quiz-title">FIND YOUR SIGNATURE MUSE</h2>
-            <p class="quiz-subtitle">
-              Answer 1 quick question to discover your perfect room ambiance:
-            </p>
-
-            <div class="quiz-question-label">
-              What atmosphere do you wish to create?
-            </div>
-
-            <div class="quiz-options-grid">
-              <button class="quiz-option-btn selected" data-quiz-scent="midnight-muse">🌙 Cozy Midnight Reverie</button>
-              <button class="quiz-option-btn" data-quiz-scent="santal-whisper">🌿 Meditative Clean Spa</button>
-              <button class="quiz-option-btn" data-quiz-scent="citrus-solstice">☀️ Sunlit Citrus Morning</button>
-            </div>
-
-            <div id="quiz-recommendation-display" class="quiz-recommendation-box">
-              <div class="quiz-match-heading">
-                Recommended Match: <strong id="quiz-match-name">Midnight Muse (Woody Oriental)</strong>
-              </div>
-              <p class="quiz-match-details" id="quiz-match-desc">
-                Rich notes of smoked black tea, dark plum, velvet black rose, and smoldering cedarwood.
+          <div class="story-split-grid reverse">
+            <div class="story-text-pane">
+              <span class="tagline-eyebrow">BOTANICAL HARMONY</span>
+              <h2 class="story-headline">A SYMPHONY OF SCENTS FOR YOUR SPACE</h2>
+              <p class="story-body-copy">
+                Immerse your living space in a restorative sensory sanctuary. From the grounding notes of Australian sandalwood and smoked black tea to the sun-warmed citrus groves of Sicily, our home fragrances create an atmosphere of effortless tranquility and quiet luxury.
               </p>
-              <button class="btn-dark" id="quiz-add-btn">+ ADD MATCH TO BAG (₹1,850)</button>
+              <a href="#collection" class="btn-sand">DISCOVER ALL FRAGRANCES</a>
+            </div>
+            <div class="story-media-box">
+              <img src="https://images.unsplash.com/photo-1570823635306-250abb06d4b3?auto=format&fit=crop&w=1000&q=85" alt="Natural artisanal soap and botanical wax melts" class="story-media-img">
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Newsletter Section -->
-      <section class="newsletter-section">
+      <!-- Value-Add Feature: "Build Your Custom Muse Trio" Bundle Box -->
+      <section class="bundle-builder-section" id="bundle">
+        <div class="container">
+          <div class="bundle-builder-card">
+            <div class="section-header-center">
+              <span class="tagline-eyebrow">CURATED GIFTING PRIVILEGE</span>
+              <h2 class="section-heading-lg">BUILD YOUR SIGNATURE MUSE TRIO</h2>
+              <p class="section-desc-italic">
+                Select 3 bespoke fragrances of your choice. Packaged in our signature embossed luxury keepsake box with complimentary calligraphy matches. Save 15% automatically.
+              </p>
+            </div>
+
+            <div class="bundle-grid-selection" id="bundle-selection-grid">
+              <div class="bundle-candle-choice selected" data-bundle-id="midnight-muse">
+                <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=85" alt="Midnight Muse" class="bundle-choice-img">
+                <h4 style="font-family: var(--font-serif); font-size: 1.15rem;">1. Midnight Muse</h4>
+                <div style="font-size: 0.72rem; color: var(--text-muted);">Smoked Tea • Rose • Amber</div>
+              </div>
+
+              <div class="bundle-candle-choice selected" data-bundle-id="santal-whisper">
+                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=600&q=85" alt="Santal Whisper" class="bundle-choice-img">
+                <h4 style="font-family: var(--font-serif); font-size: 1.15rem;">2. Santal Whisper</h4>
+                <div style="font-size: 0.72rem; color: var(--text-muted);">Cardamom • Sandalwood • Iris</div>
+              </div>
+
+              <div class="bundle-candle-choice selected" data-bundle-id="vanilla-ember">
+                <img src="https://images.unsplash.com/photo-1543257580-7269da773bf5?auto=format&fit=crop&w=600&q=85" alt="Vanilla Ember" class="bundle-choice-img">
+                <h4 style="font-family: var(--font-serif); font-size: 1.15rem;">3. Vanilla Ember</h4>
+                <div style="font-size: 0.72rem; color: var(--text-muted);">Smoked Vanilla • Charred Oak</div>
+              </div>
+            </div>
+
+            <div class="bundle-summary-bar">
+              <div>
+                <div style="font-family: var(--font-serif); font-size: 1.4rem;">Muse Trio Keepsake Set (3 Candles)</div>
+                <div style="font-size: 0.82rem; color: var(--text-secondary);">Includes Free Gift Packaging + Matches • Value: ₹5,650</div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 1.5rem;">
+                <div style="font-size: 1.4rem; font-weight: 700;">₹4,790 <span style="font-size: 0.85rem; color: #2E6B38; font-weight: 500;">(Save 15%)</span></div>
+                <button class="btn-dark" id="add-bundle-btn">+ ADD TRIO TO BAG</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIP Circle Newsletter -->
+      <section class="newsletter-box-section">
         <div class="container-narrow">
           <span class="tagline-eyebrow">THE MUSE CIRCLE</span>
-          <h2 class="newsletter-heading">STAY IN THE GLOW</h2>
-          <p class="newsletter-quote">
-            “New scents, little rituals and everything worth melting for.”
+          <h2 class="section-heading-lg">STAY IN THE GLOW</h2>
+          <p class="section-desc-italic">
+            “Receive private invitations to limited-edition small-batch pours, fragrance masterclasses, and seasonal privileges.”
           </p>
-          <form class="newsletter-form-inline" id="newsletter-form">
-            <input type="email" class="newsletter-input" id="newsletter-email" placeholder="Your email address" required>
+          <form class="newsletter-form-row" id="newsletter-form">
+            <input type="email" class="newsletter-input-box" id="newsletter-email" placeholder="Enter your email address" required>
             <button type="submit" class="btn-dark">JOIN THE MUSE</button>
           </form>
         </div>
@@ -233,102 +224,117 @@
     <!-- Footer -->
     <footer class="site-footer">
       <div class="container">
-        <div class="footer-grid">
+        <div class="footer-columns-grid">
           <div>
-            <div class="footer-brand-title">
+            <div style="font-family: var(--font-serif); font-size: 1.9rem; letter-spacing: 0.16em; margin-bottom: 0.2rem;">
               MELT MUSE
             </div>
-            <div class="footer-brand-tagline">
+            <div style="font-size: 0.6rem; letter-spacing: 0.28em; color: var(--text-muted); margin-bottom: 1.25rem;">
               BURNING BRIGHT
             </div>
-            <p class="footer-brand-quote">
-              “Candles created to turn everyday moments into something worth remembering.”
+            <p style="font-family: var(--font-serif); font-size: 1.1rem; font-style: italic; color: var(--text-secondary); max-width: 290px;">
+              “Hand-poured candles created to turn everyday moments into something worth remembering.”
             </p>
           </div>
 
           <div>
-            <h4 class="footer-col-title">Navigation</h4>
-            <ul class="footer-nav-list">
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#shop">Shop All Candles</a></li>
-              <li><a href="#categories">Diffusers & Soaps</a></li>
-              <li><a href="#about">Our Story</a></li>
+            <h4 class="footer-nav-col-title">Collections</h4>
+            <ul class="footer-link-list">
+              <li><a href="#collection">Sculpted Ceramic Candles</a></li>
+              <li><a href="#collection">Apothecary Jar Candles</a></li>
+              <li><a href="#collection">Botanical Reed Diffusers</a></li>
+              <li><a href="#bundle">Custom Gift Trio Box</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 class="footer-col-title">Customer Care</h4>
-            <ul class="footer-nav-list">
-              <li><a href="#shipping">Shipping & Returns</a></li>
-              <li><a href="#care">Candle Care Ritual</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#privacy">Privacy Policy</a></li>
+            <h4 class="footer-nav-col-title">Atelier Care</h4>
+            <ul class="footer-link-list">
+              <li><a href="#story">Wooden Wick Trimming Guide</a></li>
+              <li><a href="#shipping">Complimentary Shipping Policy</a></li>
+              <li><a href="#faq">Frequently Asked Questions</a></li>
+              <li><a href="#contact">Concierge Inquiries</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 class="footer-col-title">The Studio</h4>
-            <p class="footer-studio-text">
-              Artisanal Candle Studio, New Delhi & Mumbai
+            <h4 class="footer-nav-col-title">The Atelier</h4>
+            <p style="font-size: 0.84rem; color: var(--text-secondary); margin-bottom: 0.4rem;">
+              Artisanal Studio • New Delhi & Mumbai
             </p>
-            <p class="footer-studio-text">
-              hello@meltmuse.com
+            <p style="font-size: 0.84rem; color: var(--text-secondary); margin-bottom: 0.6rem;">
+              concierge@meltmuse.com
             </p>
-            <a href="https://www.instagram.com/meltmuse_/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="footer-instagram-link">
-              Follow @meltmuse_ ↗
+            <a href="https://www.instagram.com/meltmuse_/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" style="font-size: 0.76rem; font-weight: 600; letter-spacing: 0.12em; color: var(--accent-gold-dark); text-transform: uppercase;">
+              Follow @meltmuse_ on Instagram ↗
             </a>
           </div>
         </div>
 
-        <div class="footer-bottom-bar">
-          <div>© 2026 Melt Muse. All rights reserved. Handcrafted with intention.</div>
-          <div>BURNING BRIGHT • 100% BOTANICAL WAX</div>
+        <div class="footer-bottom-info">
+          <div>© 2026 Melt Muse. Handcrafted with botanical intention.</div>
+          <div>BURNING BRIGHT • FSC WOODEN WICKS • 100% VEGAN</div>
         </div>
       </div>
     </footer>
 
     <!-- Slide-Out Cart Drawer -->
-    <div class="cart-drawer-overlay" id="cart-drawer-overlay" aria-hidden="true">
-      <div class="cart-drawer-box">
-        <div class="cart-drawer-header">
-          <h3 class="cart-drawer-title">YOUR SHOPPING BAG <span id="cart-header-count">(1)</span></h3>
-          <button id="close-cart-btn" class="cart-close-btn">&times;</button>
+    <div class="cart-overlay" id="cart-drawer-overlay" aria-hidden="true">
+      <div class="cart-drawer-panel">
+        <div class="cart-panel-head">
+          <h3 style="font-family: var(--font-serif); font-size: 1.4rem;">YOUR BAG <span id="cart-header-count">(1)</span></h3>
+          <button id="close-cart-btn" style="font-size: 1.8rem; line-height: 1;">&times;</button>
         </div>
 
-        <div class="cart-items-body" id="cart-items-container"></div>
+        <div style="padding: 0.8rem 1.6rem 0 1.6rem; background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-subtle);">
+          <div style="font-size: 0.74rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;" id="shipping-progress-text">
+            Complimentary shipping unlocked!
+          </div>
+          <div class="shipping-meter-wrap">
+            <div class="shipping-meter-fill" id="shipping-meter-fill"></div>
+          </div>
+        </div>
 
-        <div class="cart-drawer-footer">
-          <div class="cart-summary-row">
+        <div class="cart-panel-body" id="cart-items-container"></div>
+
+        <div class="cart-panel-foot">
+          <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.4rem;">
             <span>Subtotal</span>
             <span id="cart-subtotal">₹1,850</span>
           </div>
-          <div class="cart-summary-row">
+          <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.6rem;">
             <span>Shipping</span>
-            <span>COMPLIMENTARY</span>
+            <span id="cart-shipping-val">FREE</span>
           </div>
-          <div class="cart-summary-total">
+          <div style="display: flex; justify-content: space-between; font-size: 1.15rem; font-weight: 700; border-top: 1px solid var(--border-subtle); padding-top: 0.6rem; margin-bottom: 1.2rem;">
             <span>Total</span>
             <span id="cart-total-val">₹1,850</span>
           </div>
-          <button class="btn-sand btn-block" id="proceed-checkout-btn">PROCEED TO CHECKOUT →</button>
+          <button class="btn-sand btn-block" id="proceed-checkout-btn">PROCEED TO SECURE CHECKOUT →</button>
         </div>
       </div>
     </div>
 
     <!-- Quick View Modal -->
-    <div class="modal-overlay" id="quickview-modal-overlay" aria-hidden="true">
-      <div class="modal-content-card">
-        <button id="close-quickview-btn" class="quickview-close-btn">&times;</button>
-        <div class="quickview-grid-inner">
-          <div class="quickview-img-box">
-            <img src="" alt="" id="quickview-img" class="quickview-img-element">
+    <div class="modal-screen-overlay" id="quickview-modal-overlay" aria-hidden="true">
+      <div class="modal-sheet-card">
+        <button id="close-quickview-btn" class="modal-close-trigger">&times;</button>
+        <div style="display: grid; grid-template-columns: 1fr 1fr;" class="quickview-split-grid">
+          <div style="aspect-ratio: 1/1.15; background-color: #EFE7DC; overflow: hidden;">
+            <img src="" alt="" id="quickview-img" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
-          <div class="quickview-content-pane">
+          <div style="padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
               <span class="tagline-eyebrow" id="quickview-family">WOODY ORIENTAL</span>
-              <h2 class="quickview-product-title" id="quickview-name">Midnight Muse</h2>
-              <div class="quickview-product-price" id="quickview-price">₹1,850</div>
-              <p class="quickview-product-desc" id="quickview-desc"></p>
+              <h2 style="font-family: var(--font-serif); font-size: 2.2rem; margin: 0.35rem 0;" id="quickview-name">Midnight Muse</h2>
+              <div style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;" id="quickview-price">₹1,850</div>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 1.5rem;" id="quickview-desc"></p>
+              
+              <div style="background: var(--bg-secondary); padding: 1rem; margin-bottom: 1.5rem; font-size: 0.8rem;">
+                <div><strong>Wax:</strong> 100% Coconut-Soy Botanical Blend</div>
+                <div><strong>Wick:</strong> FSC Certified Wooden Wick (Acoustic Flame)</div>
+                <div><strong>Burn Time:</strong> 55–60 Clean Burn Hours</div>
+              </div>
             </div>
             <button class="btn-dark btn-block" id="quickview-add-btn">+ ADD TO BAG</button>
           </div>
@@ -337,18 +343,18 @@
     </div>
 
     <!-- Search Modal -->
-    <div class="modal-overlay" id="search-modal-overlay" aria-hidden="true">
-      <div class="modal-content-card search-modal-card">
-        <div class="search-modal-header">
+    <div class="modal-screen-overlay" id="search-modal-overlay" aria-hidden="true">
+      <div class="modal-sheet-card" style="max-width: 650px; padding: 2.5rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
           <span class="tagline-eyebrow">DISCOVER FRAGRANCES</span>
-          <button id="close-search-btn" class="search-close-btn">&times;</button>
+          <button id="close-search-btn" style="font-size: 1.4rem;">&times;</button>
         </div>
-        <input type="text" id="site-search-input" placeholder="Search by note (e.g. Vanilla, Sandalwood, Fig, Rose)..." class="search-input-field">
+        <input type="text" id="site-search-input" placeholder="Search by note (e.g. Amber, Vanilla, Sandalwood, Fig, Rose)..." style="width: 100%; padding: 0.9rem; font-family: inherit; font-size: 1rem; border: 1px solid var(--border-subtle); outline: none; margin-bottom: 1.5rem;">
         <div id="search-results-area"></div>
       </div>
     </div>
 
-    <!-- Toast Notifications -->
-    <div class="toast-container" id="toast-container"></div>
+    <!-- Toast Notification Hub -->
+    <div class="toast-wrapper" id="toast-container"></div>
   </body>
 </html>
