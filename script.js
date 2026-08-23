@@ -7,74 +7,75 @@
   'use strict';
 
   /* ==========================================================================
-     PRODUCT CATALOG
+     AUTHENTIC PRODUCT CATALOG (FEATURING MELT MUSE REAL PHOTOGRAPHY)
      ========================================================================== */
 
   const PRODUCTS = [
     {
-      id: 'midnight-muse',
-      name: 'Midnight Muse • Matte Noir',
-      subtitle: 'Smoked Black Tea • Velvet Rose • Amber',
+      id: 'rose-gold-dough-bowl',
+      name: 'Rose & 24K Gold Wooden Dough Bowl',
+      subtitle: 'Organic Damask Rose Petals • Gold Leaf • Dual Wick',
       category: 'candles',
-      price: 1850,
-      originalPrice: 2150,
-      vesselColor: '#1A1715',
-      scentFamily: 'Woody Oriental',
-      burnTime: '55–60 Hours',
-      image: 'https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=85',
-      description: 'Our signature dark luxury candle. Opens with smoked black tea leaves and dark plum, melting into a heart of velvet black rose and smoldering cedar.'
+      price: 2450,
+      originalPrice: 2850,
+      vesselColor: '#C49A45',
+      scentFamily: 'Floral Amber',
+      burnTime: '70–75 Hours',
+      image: './assets/rose-gold-dough-bowl.jpg',
+      description: 'Artisanal hand-carved natural wooden boat candle generously filled with pure coconut-soy wax, scattered dried crimson rose petals, and 24K gold foil flakes. Poured with dual clean-burning wicks.'
     },
     {
-      id: 'santal-whisper',
-      name: 'Santal Whisper • Sage Mist',
-      subtitle: 'Australian Sandalwood • Iris • Papyrus',
+      id: 'spiced-orange-cinnamon-bowl',
+      name: 'Chai Spices & Dried Citrus Wooden Bowl',
+      subtitle: 'Ceylon Cinnamon • Star Anise • Sun-Dried Orange Slice',
+      category: 'candles',
+      price: 2650,
+      originalPrice: null,
+      vesselColor: '#8C5835',
+      scentFamily: 'Warm Spiced Gourmand',
+      burnTime: '70–75 Hours',
+      image: './assets/spiced-orange-cinnamon-bowl.jpg',
+      description: 'An evocative olfactory centerpiece. Carved from solid reclaimed mango wood, infused with real whole cinnamon barks, star anise blossoms, green cardamom pods, and sun-dried orange peel.'
+    },
+    {
+      id: 'botanical-garden-flower-candle',
+      name: 'Enchanted Flora Glass Garden Candle',
+      subtitle: 'Sculpted Wax Blossoms • Crystal Gel Wax • Fresh Neroli',
+      category: 'candles',
+      price: 1850,
+      originalPrice: 2100,
+      vesselColor: '#E8A7A1',
+      scentFamily: 'Fresh Botanical Floral',
+      burnTime: '45–50 Hours',
+      image: './assets/botanical-garden-flower-candle.jpg',
+      description: 'A poetic visual masterpiece. Hand-sculpted wax flower blossoms suspended in sparkling crystal gel wax, releasing an intoxicating bouquet of white tuberose, jasmine tea, and dew-dappled neroli.'
+    },
+    {
+      id: 'obsidian-noir-jar',
+      name: 'Midnight Muse • Obsidian Noir Dual-Wick',
+      subtitle: 'Smoked Black Tea • Bourbon Vanilla • Cedarwood',
       category: 'candles',
       price: 1950,
       originalPrice: null,
-      vesselColor: '#9CA797',
-      scentFamily: 'Woody Aromatics',
+      vesselColor: '#1A1715',
+      scentFamily: 'Woody Oriental',
       burnTime: '55–60 Hours',
-      image: 'https://images.unsplash.com/photo-1608181831557-ca5bc41707eb?auto=format&fit=crop&w=800&q=85',
-      description: 'An intoxicating harmony of Australian sandalwood, cardamom, and soft iris wrapped in milky fig and papyrus for effortless quiet luxury.'
-    },
-    {
-      id: 'rose-blush',
-      name: 'Rose & Cashmere • Blush Quartz',
-      subtitle: 'Damask Rose • Pink Pepper • Tonka',
-      category: 'candles',
-      price: 1750,
-      originalPrice: 1990,
-      vesselColor: '#D8B7AF',
-      scentFamily: 'Floral Amber',
-      burnTime: '50–55 Hours',
-      image: 'https://images.unsplash.com/photo-1595867818088-57d88c2a829e?auto=format&fit=crop&w=800&q=85',
-      description: 'Sun-warmed Turkish rose water, pink peppercorns, and delicate cashmere woods poured into a hand-glazed soft rose quartz vessel.'
-    },
-    {
-      id: 'vanilla-ember',
-      name: 'Vanilla Ember • Forest Pine',
-      subtitle: 'Bourbon Vanilla • Charred Oak • Tobacco',
-      category: 'candles',
-      price: 1850,
-      originalPrice: null,
-      vesselColor: '#39483F',
-      scentFamily: 'Warm Gourmand',
-      burnTime: '55–60 Hours',
-      image: 'https://images.unsplash.com/photo-1543257580-7269da773bf5?auto=format&fit=crop&w=800&q=85',
-      description: 'Dark Bourbon vanilla orchid with charred oak, caramelized amber, and tobacco leaf for sophisticated smoldering sweetness.'
+      image: './assets/obsidian-noir-jar.jpg',
+      description: 'Our iconic sleek matte obsidian cylinder with fitted travel lid and dual clean cotton wicks. Deep, sensual, and room-filling notes of charred oak and smoked black tea.'
     },
 
-    // Reed Diffusers
+    // Reed Diffusers & Festive Sets
     {
-      id: 'santal-diffuser',
-      name: 'Santal Whisper Reed Diffuser',
-      subtitle: 'Natural Rattan Reeds • 200ml Glass Decanter',
+      id: 'festive-peacock-diya-set',
+      name: 'Royal Peacock & Sunflower Keepsake Diya Set',
+      subtitle: 'Golden Peacock Sculptures • Sunflower Wax Diyas',
       category: 'diffusers',
-      price: 2250,
-      originalPrice: 2500,
-      scentFamily: 'Woody Aromatics',
-      image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=85',
-      description: 'Continuous room-filling fragrance without flame. Infused with pure essential oils of sandalwood, iris, and crisp cedar.'
+      price: 2950,
+      originalPrice: 3400,
+      vesselColor: '#E2B038',
+      scentFamily: 'Sacred Sandalwood & Marigold',
+      image: './assets/festive-peacock-diya-set.jpg',
+      description: 'Magnificent festive artisanal gift set featuring ornate golden peacock candelabras and sunflower embossed floating wax diyas infused with royal sandalwood and fresh marigold petals.'
     },
     {
       id: 'citrus-diffuser',
@@ -83,6 +84,7 @@
       category: 'diffusers',
       price: 2150,
       originalPrice: null,
+      vesselColor: '#D4924A',
       scentFamily: 'Citrus Herbaceous',
       image: 'https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?auto=format&fit=crop&w=800&q=85',
       description: 'Sun-drenched Sicilian blood orange and Japanese yuzu blended with crushed rosemary for an invigorating daily uplift.'
@@ -96,6 +98,7 @@
       category: 'soaps',
       price: 650,
       originalPrice: 750,
+      vesselColor: '#8C9878',
       scentFamily: 'Herbal Botanical',
       image: 'https://images.unsplash.com/photo-1570823635306-250abb06d4b3?auto=format&fit=crop&w=800&q=85',
       description: 'Artisanal cold-pressed nourishing soap bar enriched with cold-pressed olive oil, French clay, and calming lavender.'
@@ -107,6 +110,7 @@
       category: 'soaps',
       price: 850,
       originalPrice: null,
+      vesselColor: '#C49454',
       scentFamily: 'Warm Amber Resin',
       image: 'https://images.unsplash.com/photo-1602874801007-bd458bb1b8b8?auto=format&fit=crop&w=800&q=85',
       description: 'Hand-cast botanical soy wax melts infused with amber resin and dried floral botanicals for flameless warmers.'
@@ -118,9 +122,8 @@
      ========================================================================== */
 
   const STATE = {
-    cart: [{ id: 'midnight-muse', quantity: 1 }],
+    cart: [{ id: 'rose-gold-dough-bowl', quantity: 1 }],
     activeTab: 'candles',
-    bundleSelection: ['midnight-muse', 'santal-whisper', 'vanilla-ember'],
     isSoundPlaying: false,
     audioCtx: null
   };
@@ -147,7 +150,6 @@
     shippingMeterFill: document.getElementById('shipping-meter-fill'),
     proceedCheckoutBtn: document.getElementById('proceed-checkout-btn'),
 
-    bundleGridSelection: document.getElementById('bundle-selection-grid'),
     addBundleBtn: document.getElementById('add-bundle-btn'),
 
     soundToggleBtn: document.getElementById('sound-toggle-btn'),
@@ -199,7 +201,7 @@
       if (STATE.audioCtx) STATE.audioCtx.suspend();
       STATE.isSoundPlaying = false;
       if (DOM.soundIconDisplay) DOM.soundIconDisplay.textContent = '🔈';
-      showToast('Ambient candle sound paused');
+      showToast('Ambient flame crackle paused');
     } else {
       try {
         const AudioContextClass = window.AudioContext || window.webkitAudioContext;
@@ -262,7 +264,7 @@
       <article class="product-showcase-card" data-product-id="${prod.id}">
         <div class="product-vessel-frame">
           <img src="${prod.image}" alt="${prod.name}" class="vessel-img" loading="lazy">
-          ${prod.originalPrice ? `<span class="discount-pill">20% SALE</span>` : ''}
+          ${prod.originalPrice ? `<span class="discount-pill">ARTISAN SPECIAL</span>` : ''}
         </div>
         <h3 class="card-title">${prod.name}</h3>
         <div class="card-notes-preview">${prod.subtitle}</div>
@@ -317,18 +319,18 @@
         `;
       } else {
         DOM.cartItemsContainer.innerHTML = STATE.cart.map(item => {
-          if (item.id === 'muse-trio-bundle') {
+          if (item.id === 'muse-artisan-trio') {
             return `
               <div style="display: flex; gap: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
-                <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=85" style="width: 70px; height: 85px; object-fit: cover;">
+                <img src="./assets/rose-gold-dough-bowl.jpg" style="width: 70px; height: 85px; object-fit: cover;">
                 <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
                   <div>
-                    <div style="font-family: var(--font-serif); font-size: 1.1rem;">Custom Muse Trio Keepsake Box</div>
-                    <div style="font-size: 0.72rem; color: #8C827A;">Set of 3 Curated Candles + Matches</div>
+                    <div style="font-family: var(--font-serif); font-size: 1.1rem;">Artisan Botanical Dough Bowl Trio</div>
+                    <div style="font-size: 0.72rem; color: #8C827A;">Rose Gold Bowl + Chai Spiced Bowl + Flora Jar</div>
                   </div>
                   <div style="display: flex; justify-content: space-between; align-items: center;">
                     <span style="font-size: 0.8rem;">Qty: ${item.quantity}</span>
-                    <span style="font-weight: 600;">₹${(4790 * item.quantity).toLocaleString('en-IN')}</span>
+                    <span style="font-weight: 600;">₹${(5890 * item.quantity).toLocaleString('en-IN')}</span>
                   </div>
                 </div>
               </div>
@@ -360,7 +362,7 @@
     }
 
     const subtotal = STATE.cart.reduce((sum, item) => {
-      if (item.id === 'muse-trio-bundle') return sum + 4790 * item.quantity;
+      if (item.id === 'muse-artisan-trio') return sum + 5890 * item.quantity;
       const prod = PRODUCTS.find(p => p.id === item.id);
       return sum + (prod ? prod.price * item.quantity : 0);
     }, 0);
@@ -461,8 +463,8 @@
     // Bundle Builder Add
     if (DOM.addBundleBtn) {
       DOM.addBundleBtn.addEventListener('click', () => {
-        addToCart('muse-trio-bundle', 1);
-        showToast('Custom Muse Trio Gift Set added to your bag!');
+        addToCart('muse-artisan-trio', 1);
+        showToast('Artisan Dough Bowl & Floral Trio added to your bag!');
       });
     }
 
@@ -488,9 +490,9 @@
 
     if (DOM.proceedCheckoutBtn) {
       DOM.proceedCheckoutBtn.addEventListener('click', () => {
-        showToast('Directing to secure small-batch checkout...');
+        showToast('Connecting to Melt Muse Artisan Atelier checkout...');
         setTimeout(() => {
-          showToast('Order secured! Artisans are queuing your pour.', 4500);
+          showToast('Order secured! Your handcrafted botanical candle is queued for pouring.', 4500);
           STATE.cart = [];
           updateCartUI();
           closeCart();
