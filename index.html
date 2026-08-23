@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melt Muse | BURNING BRIGHT — Artisanal Candles & Home Fragrance</title>
+    <meta name="description" content="Melt Muse hand-pours luxury botanical candles, reed diffusers, and artisanal home fragrances created to turn everyday moments into something worth remembering.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕯️</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- External Script -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+      <span>Free Shipping on Orders over ₹1,499 • Handcrafted Small-Batch Soy Wax</span>
+    </div>
+
+    <!-- Minimal Header -->
+    <header class="site-header" id="site-header">
+      <div class="container header-container">
+        <!-- Left Navigation -->
+        <nav class="header-nav">
+          <a href="#hero" class="header-nav-link">HOME</a>
+          <a href="#shop" class="header-nav-link">SHOP BY</a>
+          <a href="#about" class="header-nav-link">ABOUT</a>
+          <a href="#quiz" class="header-nav-link">SCENT QUIZ</a>
+        </nav>
+
+        <!-- Centered Logo -->
+        <div class="header-logo">
+          <a href="#hero" class="header-logo-text">MELT MUSE</a>
+          <div class="header-logo-sub">BURNING BRIGHT</div>
+        </div>
+
+        <!-- Right Action Icons -->
+        <div class="header-actions">
+          <button class="action-icon-btn" id="search-btn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <button class="action-icon-btn" id="sound-toggle-btn" aria-label="Toggle Ambience" title="Wood wick ambience">
+            <span id="sound-icon-display">🔈</span>
+          </button>
+          <button class="action-icon-btn" id="cart-btn" aria-label="Shopping Bag">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2Z"></path>
+              <path d="M3 6h18"></path>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="action-badge" id="cart-count">1</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Split Hero Section (Matches Reference Image) -->
+      <section class="split-hero" id="hero">
+        <div class="hero-left-col">
+          <h1 class="hero-editorial-title">B A C K &nbsp; I N &nbsp; S T O C K &nbsp; !</h1>
+          <p class="hero-editorial-sub">Handmade Candle</p>
+          <a href="#shop" class="btn-sand">SHOP NOW</a>
+        </div>
+        <div class="hero-right-col">
+          <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=1200&q=85" alt="Melt Muse handcrafted lavender soy candle" class="hero-main-img">
+          <div class="hero-floating-badge">
+            <span>MELT MUSE • PURE BOTANICAL WAX</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scrolling Marquee Ticker (Matches Reference Image) -->
+      <div class="marquee-banner">
+        <div class="marquee-track">
+          <span class="marquee-item">20% OFF For Candle & Diffuser</span>
+          <span class="marquee-item">•</span>
+          <span class="marquee-item">Free Shipping on Orders Over ₹1,499</span>
+          <span class="marquee-item">•</span>
+          <span class="marquee-item">Handmade Pure Botanical Wax</span>
+          <span class="marquee-item">•</span>
+          <span class="marquee-item">Acoustic Crackling Wooden Wicks</span>
+          <span class="marquee-item">•</span>
+          <span class="marquee-item">20% OFF For Candle & Diffuser</span>
+          <span class="marquee-item">•</span>
+          <span class="marquee-item">Free Shipping on Orders Over ₹1,499</span>
+          <span class="marquee-item">•</span>
+          <span class="marquee-item">Handmade Pure Botanical Wax</span>
+        </div>
+      </div>
+
+      <!-- Minimal 4-Column Product Grid (Matches Reference Image) -->
+      <section class="products-section" id="shop">
+        <div class="container">
+          <div class="minimal-products-grid" id="main-product-grid">
+            <!-- Dynamically populated via script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Welcome Editorial Section with Asymmetric Photos (Matches Reference Image) -->
+      <section class="welcome-section" id="about">
+        <div class="container">
+          <div class="welcome-grid">
+            <div class="welcome-text-col">
+              <h2 class="welcome-heading">WELCOME</h2>
+              <p class="welcome-body">
+                Melt Muse creates thoughtfully made, beautifully scented candles designed to bring warmth, atmosphere, and gentle personality into everyday spaces. Hand-poured with pure botanical wax, sustainably harvested wooden wicks, and nuanced fragrance notes.
+              </p>
+              <a href="#quiz" class="btn-sand">DISCOVER YOUR SCENT →</a>
+            </div>
+            <div class="welcome-media-col">
+              <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=85" alt="Minimalist Reed Diffuser" class="welcome-img-large">
+              <img src="https://images.unsplash.com/photo-1506003094589-53954a26283f?auto=format&fit=crop&w=600&q=85" alt="Sunlit Candle Glow" class="welcome-img-small">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flowing Curved / Wavy Ribbon Banner Section (Matches Reference Image) -->
+      <section class="wavy-bestseller-section">
+        <div class="wavy-bg-image-container">
+          <img src="https://images.unsplash.com/photo-1543257580-7269da773bf5?auto=format&fit=crop&w=1600&q=85" alt="Amber jar candle background" class="wavy-bg-img">
+        </div>
+        
+        <!-- SVG Wavy Flowing Ribbon -->
+        <div class="wavy-ribbon-wrapper">
+          <svg class="wavy-ribbon-svg" viewBox="0 0 1200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="wavePath" d="M -50 90 Q 250 160, 600 90 T 1250 90" fill="none" stroke="transparent"/>
+            <!-- Wavy Ribbon Shape -->
+            <path d="M 0 85 Q 300 165, 600 85 T 1200 85 L 1200 135 Q 900 55, 600 135 T 0 135 Z" fill="#E6DCCE" fill-opacity="0.95"/>
+            <!-- Text on Path -->
+            <text fill="#1E1C1A" font-family="'Cormorant Garamond', serif" font-size="22" letter-spacing="4">
+              <textPath href="#wavePath" startOffset="5%">
+                • Our best sellers • Gentle scents • Discover our new products • Our best sellers • Gentle scents • Discover our new products •
+              </textPath>
+            </text>
+          </svg>
+        </div>
+
+        <div class="wavy-bestseller-badge">
+          <h2 class="bestseller-floating-title">BEST SELLER</h2>
+        </div>
+      </section>
+
+      <!-- 3-Column Minimal Category Grid (Matches Reference Image) -->
+      <section class="category-spotlight-section" id="categories">
+        <div class="container">
+          <div class="category-grid-3">
+            <div class="category-card" data-category-filter="candles">
+              <div class="category-img-frame">
+                <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=85" alt="Candles Category" class="category-img">
+              </div>
+              <a href="#shop" class="category-label-link">CANDLES →</a>
+            </div>
+
+            <div class="category-card" data-category-filter="diffusers">
+              <div class="category-img-frame">
+                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=85" alt="Diffusers Category" class="category-img">
+              </div>
+              <a href="#shop" class="category-label-link">DIFFUSER →</a>
+            </div>
+
+            <div class="category-card" data-category-filter="soaps">
+              <div class="category-img-frame">
+                <img src="https://images.unsplash.com/photo-1570823635306-250abb06d4b3?auto=format&fit=crop&w=800&q=85" alt="Soaps and Wax Melts Category" class="category-img">
+              </div>
+              <a href="#shop" class="category-label-link">SOAP & WAX MELTS →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Scent Finder Quiz Section (Value Add for Conversion) -->
+      <section class="quiz-section" id="quiz">
+        <div class="container">
+          <div class="quiz-card">
+            <span class="tagline-eyebrow">FRAGRANCE CONCIERGE</span>
+            <h2 class="quiz-title">FIND YOUR SIGNATURE MUSE</h2>
+            <p class="quiz-subtitle">
+              Answer 1 quick question to discover your perfect room ambiance:
+            </p>
+
+            <div class="quiz-question-label">
+              What atmosphere do you wish to create?
+            </div>
+
+            <div class="quiz-options-grid">
+              <button class="quiz-option-btn selected" data-quiz-scent="midnight-muse">🌙 Cozy Midnight Reverie</button>
+              <button class="quiz-option-btn" data-quiz-scent="santal-whisper">🌿 Meditative Clean Spa</button>
+              <button class="quiz-option-btn" data-quiz-scent="citrus-solstice">☀️ Sunlit Citrus Morning</button>
+            </div>
+
+            <div id="quiz-recommendation-display" class="quiz-recommendation-box">
+              <div class="quiz-match-heading">
+                Recommended Match: <strong id="quiz-match-name">Midnight Muse (Woody Oriental)</strong>
+              </div>
+              <p class="quiz-match-details" id="quiz-match-desc">
+                Rich notes of smoked black tea, dark plum, velvet black rose, and smoldering cedarwood.
+              </p>
+              <button class="btn-dark" id="quiz-add-btn">+ ADD MATCH TO BAG (₹1,850)</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter-section">
+        <div class="container-narrow">
+          <span class="tagline-eyebrow">THE MUSE CIRCLE</span>
+          <h2 class="newsletter-heading">STAY IN THE GLOW</h2>
+          <p class="newsletter-quote">
+            “New scents, little rituals and everything worth melting for.”
+          </p>
+          <form class="newsletter-form-inline" id="newsletter-form">
+            <input type="email" class="newsletter-input" id="newsletter-email" placeholder="Your email address" required>
+            <button type="submit" class="btn-dark">JOIN THE MUSE</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand-title">
+              MELT MUSE
+            </div>
+            <div class="footer-brand-tagline">
+              BURNING BRIGHT
+            </div>
+            <p class="footer-brand-quote">
+              “Candles created to turn everyday moments into something worth remembering.”
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-nav-list">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#shop">Shop All Candles</a></li>
+              <li><a href="#categories">Diffusers & Soaps</a></li>
+              <li><a href="#about">Our Story</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Customer Care</h4>
+            <ul class="footer-nav-list">
+              <li><a href="#shipping">Shipping & Returns</a></li>
+              <li><a href="#care">Candle Care Ritual</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">The Studio</h4>
+            <p class="footer-studio-text">
+              Artisanal Candle Studio, New Delhi & Mumbai
+            </p>
+            <p class="footer-studio-text">
+              hello@meltmuse.com
+            </p>
+            <a href="https://www.instagram.com/meltmuse_/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="footer-instagram-link">
+              Follow @meltmuse_ ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div>© 2026 Melt Muse. All rights reserved. Handcrafted with intention.</div>
+          <div>BURNING BRIGHT • 100% BOTANICAL WAX</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Slide-Out Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay" aria-hidden="true">
+      <div class="cart-drawer-box">
+        <div class="cart-drawer-header">
+          <h3 class="cart-drawer-title">YOUR SHOPPING BAG <span id="cart-header-count">(1)</span></h3>
+          <button id="close-cart-btn" class="cart-close-btn">&times;</button>
+        </div>
+
+        <div class="cart-items-body" id="cart-items-container"></div>
+
+        <div class="cart-drawer-footer">
+          <div class="cart-summary-row">
+            <span>Subtotal</span>
+            <span id="cart-subtotal">₹1,850</span>
+          </div>
+          <div class="cart-summary-row">
+            <span>Shipping</span>
+            <span>COMPLIMENTARY</span>
+          </div>
+          <div class="cart-summary-total">
+            <span>Total</span>
+            <span id="cart-total-val">₹1,850</span>
+          </div>
+          <button class="btn-sand btn-block" id="proceed-checkout-btn">PROCEED TO CHECKOUT →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal-overlay" id="quickview-modal-overlay" aria-hidden="true">
+      <div class="modal-content-card">
+        <button id="close-quickview-btn" class="quickview-close-btn">&times;</button>
+        <div class="quickview-grid-inner">
+          <div class="quickview-img-box">
+            <img src="" alt="" id="quickview-img" class="quickview-img-element">
+          </div>
+          <div class="quickview-content-pane">
+            <div>
+              <span class="tagline-eyebrow" id="quickview-family">WOODY ORIENTAL</span>
+              <h2 class="quickview-product-title" id="quickview-name">Midnight Muse</h2>
+              <div class="quickview-product-price" id="quickview-price">₹1,850</div>
+              <p class="quickview-product-desc" id="quickview-desc"></p>
+            </div>
+            <button class="btn-dark btn-block" id="quickview-add-btn">+ ADD TO BAG</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal-overlay" id="search-modal-overlay" aria-hidden="true">
+      <div class="modal-content-card search-modal-card">
+        <div class="search-modal-header">
+          <span class="tagline-eyebrow">DISCOVER FRAGRANCES</span>
+          <button id="close-search-btn" class="search-close-btn">&times;</button>
+        </div>
+        <input type="text" id="site-search-input" placeholder="Search by note (e.g. Vanilla, Sandalwood, Fig, Rose)..." class="search-input-field">
+        <div id="search-results-area"></div>
+      </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toast-container"></div>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+/* ==========================================================================
+   MELT MUSE — LUXURY CANDLES & HOME FRAGRANCE DESIGN SYSTEM
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --bg-primary: #FBF9F5;       /* Warm Ivory */
+  --bg-secondary: #F5EFEB;     /* Soft Cream */
+  --bg-tertiary: #EFE8E2;      /* Pale Warm Bisque */
+  --bg-blush: #F4ECE8;         /* Pale Blush */
+  --bg-dark: #161412;          /* Deep Obsidian Charcoal */
+  --bg-dark-card: #211E1A;     /* Dark luxury card */
+  --bg-overlay: rgba(22, 20, 18, 0.45);
+
+  --text-primary: #1C1A17;     /* Deep Warm Charcoal */
+  --text-secondary: #6B645C;   /* Muted Slate Taupe */
+  --text-muted: #9E958C;       /* Soft Sand */
+  --text-light: #FBF9F5;       /* Ivory White */
+  --text-light-muted: #B8B0A6; /* Soft Muted Ivory */
+
+  --accent-gold: #C5A880;      /* Champagne Gold */
+  --accent-gold-dark: #A8875A; /* Deep Gold */
+  --accent-gold-light: #F0E6D8;/* Gold Dust */
+  --accent-sage: #8E978C;      /* Sage Mist */
+  --accent-sage-bg: #EAEFE8;   /* Light Sage */
+  --accent-rose: #CFA499;      /* Dusty Rose */
+
+  --border-subtle: rgba(28, 26, 23, 0.08);
+  --border-medium: rgba(28, 26, 23, 0.16);
+  --border-dark: rgba(251, 249, 245, 0.12);
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', Garamond, 'Didot', Georgia, serif;
+  --font-sans: 'Montserrat', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-script: 'Italianno', cursive;
+
+  /* Shadows */
+  --shadow-subtle: 0 4px 20px -4px rgba(28, 26, 23, 0.05);
+  --shadow-medium: 0 12px 32px -6px rgba(28, 26, 23, 0.08);
+  --shadow-elevated: 0 24px 48px -12px rgba(28, 26, 23, 0.14);
+  --shadow-dark: 0 20px 50px rgba(0, 0, 0, 0.4);
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Spacing & Sizing */
+  --container-max: 1380px;
+  --header-height: 84px;
+  --header-height-mobile: 68px;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Luxury Typography Utilities */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+  line-height: 1.15;
+}
+
+.serif-display {
+  font-family: var(--font-serif);
+  font-weight: 300;
+}
+
+.script-accent {
+  font-family: var(--font-script);
+  font-size: 2.2rem;
+  color: var(--accent-gold-dark);
+  line-height: 1;
+}
+
+.tagline-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-gold-dark);
+}
+
+.caption-meta {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D2C9;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Luxury Button System */
+.btn-luxury {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0.95rem 2rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.btn-primary {
+  background-color: var(--text-primary);
+  color: var(--text-light);
+  border: 1px solid var(--text-primary);
+}
+.btn-primary:hover {
+  background-color: #2F2B26;
+  border-color: #2F2B26;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(28, 26, 23, 0.15);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid rgba(28, 26, 23, 0.35);
+}
+.btn-outline:hover {
+  background-color: var(--text-primary);
+  color: var(--text-light);
+  border-color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.btn-light-outline {
+  background-color: rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: var(--text-light);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.btn-light-outline:hover {
+  background-color: var(--text-light);
+  color: var(--text-primary);
+  border-color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background-color: var(--accent-gold);
+  color: #171513;
+  border: 1px solid var(--accent-gold);
+}
+.btn-gold:hover {
+  background-color: var(--accent-gold-dark);
+  border-color: var(--accent-gold-dark);
+  color: #FFFFFF;
+}
+
+/* Subtle Text Link */
+.editorial-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+  transition: var(--transition-fast);
+}
+
+.editorial-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform var(--transition-smooth);
+}
+
+.editorial-link:hover::after {
+  transform: scaleX(0.4);
+}
+
+/* Luxury Badges */
+.luxury-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border-radius: 1px;
+  background-color: rgba(251, 249, 245, 0.92);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  color: var(--text-primary);
+  border: 1px solid rgba(28, 26, 23, 0.08);
+}
+
+.luxury-badge.bestseller {
+  background-color: #1C1A17;
+  color: #FBF9F5;
+  border-color: #1C1A17;
+}
+
+.luxury-badge.new {
+  background-color: #8E978C;
+  color: #FFFFFF;
+  border-color: #8E978C;
+}
+
+.luxury-badge.limited {
+  background-color: #C5A880;
+  color: #1C1A17;
+  border-color: #C5A880;
+}
+
+/* Scent Pyramids */
+.pyramid-note-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  padding: 0.25rem 0.7rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  border-radius: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+@keyframes flameFlicker {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
+  25% { transform: scale(1.04) rotate(1.5deg); opacity: 1; }
+  50% { transform: scale(0.96) rotate(-1deg); opacity: 0.85; }
+  75% { transform: scale(1.02) rotate(0.8deg); opacity: 0.95; }
+}
+
+.flame-anim {
+  animation: flameFlicker 3s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Drawer / Modal Overlays */
+.overlay-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-overlay);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Star Rating */
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--accent-gold);
+}
